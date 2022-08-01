@@ -2,7 +2,7 @@
 {
     public sealed class Singleton
     {
-        private static int counter = 0;
+        private static int counter;
         private static Singleton instance = null;
         public static Singleton GetInstance
         {
@@ -16,8 +16,8 @@
 
         private Singleton()
         {
-            counter++;
-            Console.WriteLine("Counter Value " + counter.ToString());
+            counter = 0;
+            //Console.WriteLine("Counter Value_check " + counter.ToString());
         }
 
         private void decrement()
