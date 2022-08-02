@@ -17,17 +17,24 @@
         private Singleton()
         {
             counter = 0;
-            //Console.WriteLine("Counter Value_check " + counter.ToString());
+            Console.WriteLine("Counter Value_check " + counter.ToString());
         }
 
-        private void decrement()
+        public void decrement()
         {
             counter--;
+
+            if (counter < 0)
+            {
+                counter = 0;
+            }
+
+
             Console.WriteLine("Counter Value " + counter.ToString());
 
         }
 
-        private void increment()
+        public void increment()
         {
             counter++;
             Console.WriteLine("Counter Value " + counter.ToString());

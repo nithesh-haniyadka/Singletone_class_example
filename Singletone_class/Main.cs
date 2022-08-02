@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             Singleton obj = Singleton.GetInstance;
+            //Console.WriteLine(obj.ToString());
            
             Console.WriteLine("Enter the input");
 
